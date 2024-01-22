@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Enlaces a fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700;6..12,1000&family=Prompt:wght@500&display=swap" rel="stylesheet">
+    <!--Enlaces de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Enlace al CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Favicon-->
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/0/0c/Netflix_2015_N_logo.svg" type="image/png">
+    <title>Netflix Landing Page con Bootstrap 5</title>
+  </head>
+  <body>
+    <!--Cabecera-->
+    <header>
+      <!--Barra de navegación-->
+      <nav class="navbar navbar-light p-0">
+        <div class="container-fluid px-5">
+          <img class="navbar-brand-logo" src="NetflixLogo.png" alt="Netflix Logo">
+          <!--Selector de idioma e inicio de sesión-->
+          <form class="d-flex">
+            <svg width="16" height="16" viewBox="0 0 16 16" mlns="http://www.w3.org/2000/svg" class="position-absolute mt-2 ms-2 default-ltr-cache-4z3qvp e1svuwfo1" data-name="Languages" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="white"></path></svg>
+            <select class="form-select me-4 text-white text-center">
+              <option selected>Español</option>
+              <option value="1">English</option>
+            </select>
+            <button type="button" class="btn text-white top-sign-in">Iniciar Sesión</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!--Sección hero-->
+    <div class="bg-img">
+      <!--Capa con el degradado-->
+      <div class="layer">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-12 text-center w-75 mt-5">
+            <h1 class="fs-1 mt-5">Los grandes éxitos españoles e internacionales. Las mejores historias. Todos en Netflix.</h1>
+            <h3 class="fs-4 mt-4">Ve Netflix donde quieras. Cancela cuando quieras.</h3>
+            <h5 class="mt-4">¿Quieres ver algo ya? Escribe tu dirección de correo para crear una suscripción a Netflix o reactivarla.</h5>
+          </div>
+        </div>
+
+        <!--Sección para suscribirse-->
+        <div class="row w-100 mt-3">
+          <div class="col-md-2 col-1"></div>
+          <div class="col-md-8 col-10 p-0 main-search">
+            <!--Input para correo electrónico-->
+            <div class="d-flex mb-3 justify-content-center">
+              <input type="text" class="form-control" placeholder="Dirección de correo">
+              <button class="btn ms-2 text-white text-center fw-bold fs-4">Empezar <i class="bi bi-chevron-right text-white"></i></button>
+            </div>
+          </div>
+          <div class="col-md-2 col-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Secciones con la información-->
+    <!--Sección 1-->
+    <section>
+      <div class="container">
+        <div class="row align-items-center reverse">
+          <div class="col-lg-6">
+            <h2>Disfruta en tu tele</h2>
+            <p>Smart TV, Playstation, Xbox, Chromecast, Apple TV, reproductores Blu-ray y muchos más.</p>
+          </div>
+          <div class="col-lg-6">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Sección 2-->
+    <section>
+      <div class="container">
+        <div class="row align-items-center ">
+          <div class="col-lg-6">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png">
+          </div>
+          <div class="col-lg-6">
+            <h2>Usa cualquier dispositivo</h2>
+            <p>Ve en streaming todas las películas y series en tu móvil, tableta, ordenador y televisor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Sección 3-->
+    <section>
+      <div class="container">
+        <div class="row align-items-center reverse">
+          <div class="col-lg-6">
+            <h2>Crea perfiles infantiles</h2>
+            <p>Deja que los niños vivan aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, gratis con tu suscripción.</p>
+          </div>
+          <div class="col-lg-6">
+           <img src="https://occ-0-358-360.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABfqIddV64JsFW70ZLyiGkx_uJQMdtpWNP8g361QHR1WQSDmLmuv967PGBRIRJX9QB731ET5MlcyjW6-cYmVYL6JmtRuo6bjxD1wk.png?r=b32">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Sección 4-->
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg">
+          </div>
+          <div class="col-lg-6">
+            <h2>Descárgate tus favoritas para verlas sin conexión</h2>
+            <p>Disfruta de Netflix en tierra, mar y aire…</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Sección de Preguntas Frecuentes-->
+    <section>
+      <div class="faq">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="mb-5">Preguntas frecuentes</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-3 col-md-2 col-1"></div>
+          <div class="col-lg-6 col-md-8 col-10 p-0">
+            <!--Desplegable de la pregunta-->
+            <a class="btn text-white" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls autoplay="multiCollapseExample1">¿Qué es Netflix?</a>
+            <!--Contenido de la pregunta-->
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                Netflix es un servicio de streaming que ofrece una amplia variedad de series, películas, títulos de anime, documentales y otros contenidos premiados en miles de dispositivos conectados a internet.
+                Puedes ver todo lo que quieras, cuando quieras, por una tarifa mensual reducida. ¡Siempre hay algo nuevo que descubrir, y cada semana se añaden nuevas series y películas!
+              </div>
+            </div>
+            <!--Desplegable de la pregunta-->
+            <a class="btn text-white" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls autoplay="multiCollapseExample2">¿Cuánto cuesta Netflix?</a>
+            <!--Contenido de la pregunta-->
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                Disfruta de Netflix en tu smartphone, tableta, Smart TV, ordenador o dispositivo de streaming, todo por una tarifa mensual fija. Planes desde 5,49 € a 17,99 € al mes. Sin cargos adicionales ni contratos.
+              </div>
+            </div>
+            <!--Desplegable de la pregunta-->
+            <a class="btn text-white" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls autoplay="multiCollapseExample3">¿Dónde puedo ver Netflix?</a>
+            <!--Contenido de la pregunta-->
+            <div class="collapse multi-collapse" id="multiCollapseExample3">
+              <div class="card card-body">
+                Disfruta donde quieras y cuando quieras. Inicia sesión con tu cuenta de Netflix para disfrutar al instante de todo el contenido de netflix.com desde tu ordenador personal o en cualquier dispositivo conectado a internet que ofrezca la aplicación de Netflix, entre ellos, smart TV, smartphones, tabletas, reproductores multimedia de streaming y consolas de juegos.
+                También puedes descargar tus series favoritas con la aplicación de iOS, Android o Windows 10. Utiliza las descargas para ver títulos dondequiera que vayas y cuando no dispongas de conexión a internet. Netflix siempre te acompaña.
+              </div>
+            </div>
+            <!--Desplegable de la pregunta-->
+            <a class="btn text-white" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls autoplay="multiCollapseExample4">¿Cómo cancelo?</a>
+            <!--Contenido de la pregunta-->
+            <div class="collapse multi-collapse" id="multiCollapseExample4">
+              <div class="card card-body">
+                Netflix es flexible. Sin contratos liosos ni compromisos. Puedes cancelar fácilmente tu cuenta en línea con tan solo dos clics. Sin cargos por cancelación: activa o cancela tu cuenta en cualquier momento.
+              </div>
+            </div>
+            <!--Desplegable de la pregunta-->
+            <a class="btn text-white" data-bs-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls autoplay="multiCollapseExample5">¿Qué puedo ver en Netflix?</a>
+            <!--Contenido de la pregunta-->
+            <div class="collapse multi-collapse" id="multiCollapseExample5">
+              <div class="card card-body">
+                Netflix dispone de una amplia biblioteca de originales de Netflix galardonados, títulos de anime, series de TV, documentales, largometrajes y otros contenidos. Ve todo el contenido que quieras, cuando quieras.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-2 col-1"></div>
+        </div> 
+
+      </div>
+    </section>
+
+    <!--Sección para suscribirse-->
+    <section>
+      <div class="bottom-search">
+        <h5 class="text-center">¿Quieres ver algo ya? Escribe tu dirección de correo para crear una suscripción a Netflix o reactivarla.</h5>
+           <div class="row">
+          <div class="col-md-2 col-1"></div>
+          <div class="row w-100">
+            <!--Input para el correo electrónico-->
+            <div class="col-md-2 col-1"></div>
+            <div class="col-md-8 col-10 p-0 main-search">
+              <div class="d-flex mb-3 justify-content-center">
+                <input type="text" class="form-control" placeholder="Dirección de correo">
+                <button class="btn ms-2 text-white text-center fw-bold fs-4">Empezar <i class="bi bi-chevron-right text-white"></i></button>
+              </div>
+            </div>
+            <div class="col-md-2 col-1"></div>
+          </div>
+          <div class="col-md-2 col-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--Pie de página-->
+    <footer>
+      <div class="container">
+       <ul>
+         <li class="ps-2 pb-3">¿Preguntas? Llama al <a href="">900-759-106</a></a></li>
+       </ul>
+       <!--Sección con enlaces de interés del footer-->
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <ul>
+              <li><a href="">Preguntas frecuentes</a></li>
+              <li><a href="">Inversores</a></li>
+              <li><a href="">Formas de ver</a></li>
+              <li><a href="">Información corporativa</a></li>
+              <li><a href="">Avisos legales</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul>
+              <li><a href="">Centro de ayuda</a></li>
+              <li><a href="">Empleo</a></li>
+              <li><a href="">Términos de uso</a></li>
+              <li><a href="">Contáctanos</a></li>
+              <li><a href="">Solo en Netflix</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul>
+              <li><a href="">Cuenta</a></li>
+              <li><a href="">Canjear tarjetas regalo</a></li>
+              <li><a href="">Privacidad</a></li>
+              <li><a href="">Prueba de velocidad</a></li>
+              <li><a href="">Opciones de anuncios</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul>
+              <li><a href="">Zona de prensa</a></li>
+              <li><a href="">Comprar tarjetas regalo</a></li>
+              <li><a href="">Preferencias de cookies</a></li>
+              <li><a href="">Garantía legal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--Selector de idioma-->
+      <div class="container mt-5">
+        <div class="row ps-4 pb-4">
+          <div class="col-lg-2 col-md-4 col-6">
+            <svg width="16" height="16" viewBox="0 0 16 16" mlns="http://www.w3.org/2000/svg" class="position-absolute mt-2 ms-2 default-ltr-cache-4z3qvp e1svuwfo1" data-name="Languages" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="white"></path></svg>
+              <select class="form-select text-white text-center">
+                <option selected>Español</option>
+                <option value="1">English</option>
+              </select>
+          </div>
+          <p class="mt-5">Netflix España</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

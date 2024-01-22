@@ -1,0 +1,321 @@
+/* Variables de colores */
+:root {
+   --black: #000000;
+   --white: #ffffff;
+   --red: #e50914;
+   --darkRed: #b4070f;
+   --gray: #757575;
+   --darkGray: #222;
+   --lightGray: #c1c1c1;
+   --darkBackground: rgba(0, 0, 0, 0.8);
+   --mediumBackground: rgba(0, 0, 0, 0.5);
+ }
+ 
+ /* Variables de tamaños */
+ :root {
+   --fontSizeH1: 290%;
+   --fontSizeH2: 55px;
+   --fontSizeH3: 30px;
+   --fontSizeH5: 20px;
+   --fontSizeP: 22px;
+   --fontSizeBtn: 30px;
+   --heightBtn: 72px;
+   --widthBtn: 180px;
+   --navbarWidth: 85%;
+   --navbarMarginLeft: 7.5%;
+   --mainSearchWidth: 60%;
+   --mainSearchMaxWidth: 80vw;
+   --mainSearchInputHeight: 60px;
+   --mainSearchInputWidth: 400px;
+ }
+ 
+ /* Estilos generales */
+ body {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito Sans";
+ }
+ 
+ img {
+    max-width: 100%;
+ }
+ 
+ /* Estilos de sección */
+ section {
+    border-top: 8px solid var(--darkGray);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: var(--black);
+ }
+ 
+ section:first-of-type,
+ section:last-of-type {
+    border-top: none;
+ }
+ 
+ section h2 {
+    font-size: var(--fontSizeH2);
+    color: var(--white);
+    font-weight: bold;
+ }
+ 
+ section p {
+    font-size: var(--fontSizeP);
+    color: var(--white);
+ }
+ 
+ /* Estilos de encabezados */
+ h1,
+ h3,
+ h5 {
+    color: var(--white);
+ }
+ 
+ h1 {
+    font-size: var(--fontSizeH1) !important;
+    font-weight: 1000 !important;
+ }
+ 
+ /* Estilos de texto común */
+ .text-common {
+    color: var(--gray);
+ }
+ 
+ /* Estilos de filas */
+ .row {
+    margin: 0;
+ }
+ 
+ /* Estilos de barra de navegación */
+ .navbar {
+    position: absolute;
+    width: var(--navbarWidth);
+    margin-left: var(--navbarMarginLeft);
+    margin-top: 40px;
+ }
+ 
+ .navbar-brand-logo {
+    width: 150px;
+ }
+ 
+ /* Estilos para el selector de idioma y boton de inicio de sesión */
+ input,
+ select {
+    background-color: var(--darkBackground) !important;
+    color: var(--lightGray) !important;
+    border-radius: 5px !important;
+ }
+ 
+ .form-select {
+    border: 1px solid gray;
+    width: 130px;
+    padding: 0;
+    height: 30px;
+ }
+ 
+ option {
+    color: black;
+    background-color: white;
+ }
+ 
+ .top-sign-in,
+ .top-sign-in:hover {
+    background-color: var(--red);
+    width: 130px;
+    padding: 0;
+    height: 30px;
+ }
+ 
+ .top-sign-in:hover {
+    background-color: var(--darkRed);
+ }
+ 
+ /* Estilos para la imagen principal */
+ .bg-img {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/df6621a3-890c-4ca0-b698-90bd5152f3d1/f8c017ab-feb5-44e8-b12b-92eb733d532d/ES-es-20240107-trifectadaily-perspective_alpha_website_large.jpg);
+    height: 700px;
+    background-position-y: 70%;
+    background-position-x: center;
+ }
+ 
+ /* Capa con el degradado en la imagen principal */
+ .layer {
+    background-image: linear-gradient(to top, var(--darkBackground) 0, rgba(0, 0, 0, 0) 60%, var(--darkBackground) 100%);
+    background-color: var(--mediumBackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+ }
+ 
+ /* Estilos para el input de suscribirse */
+ .main-search input {
+    height: var(--mainSearchInputHeight);
+    width: var(--mainSearchInputWidth);
+    border: 1px solid var(--gray);
+ }
+ 
+ .main-search input::placeholder {
+    color: var(--lightGray);
+ }
+ 
+ .main-search button,
+ .main-search button:hover {
+    background-color: var(--red);
+    width: var(--widthBtn);
+ }
+ 
+ .main-search button:hover {
+    background-color: var(--darkRed);
+ }
+
+ 
+ /* Estilos de preguntas frecuentes (FAQ) */
+ .faq .btn {
+    width: 100%;
+    height: var(--heightBtn);
+    background-color: #303030;
+    font-size: var(--fontSizeBtn);
+    padding-top: 12px;
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+ }
+ 
+ .faq .btn:hover {
+    background-color: #494949;
+ }
+ 
+ .faq .card {
+    background-color: #303030;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 30px;
+    margin-bottom: 20px;
+ }
+ 
+ /* Estilos de pie de página */
+ footer {
+    background-color: var(--black);
+    padding-top: 40px;
+    border-top: 8px solid var(--darkGray);
+    color: var(--lightGray);
+    font-size: 90%;
+ }
+ 
+ footer ul {
+    list-style-type: none;
+ }
+ 
+ footer ul li {
+    margin-bottom: 10px;
+ }
+ 
+ footer a {
+    color: var(--lightGray);
+ }
+ 
+ /* Media Queries */
+ @media (min-width: 1200px) {
+    .main-search {
+       width: var(--mainSearchWidth);
+       margin: 0 auto;
+    }
+ }
+ 
+ /* Teléfono grande o tablet */
+ @media (max-width: 800px) {
+    .layer h1 {
+       font-size: 60px;
+    }
+    .form-control {
+       max-width: var(--mainSearchMaxWidth);
+    }
+ }
+ 
+ /* Teléfonos medianos */
+ @media (max-width: 768px) {
+    .navbar-brand-logo {
+       width: 30%;
+    }
+    .form-select {
+       width: 70px !important;
+       color: transparent !important;
+    }
+    .top-sign-in {
+       width: 100px;
+    }
+    .main-search div {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .main-search div button {
+       margin-top: 20px;
+    }
+    .reverse {
+       flex-direction: column-reverse;
+    }
+ }
+ 
+ @media (max-width: 612px) {
+    .layer h1 {
+       font-size: 50px;
+    }
+    .layer h5 {
+       font-size: var(--fontSizeH5);
+    }
+    section h2 {
+       font-size: var(--fontSizeH3);
+    }
+    .faq .btn {
+       font-size: var(--fontSizeH5);
+       height: auto;
+       padding-top: 5px;
+       padding-left: 10px;
+    }
+    .faq .card {
+       font-size: 16px;
+       padding-left: 10px;
+    }
+    section p {
+       font-size: 18px;
+    }
+ }
+ 
+ /* Teléfonos pequeños */
+ @media (max-width: 515px) {
+    .layer h1 {
+       font-size: 40px;
+    }
+    .layer h5 {
+       font-size: var(--fontSizeH5);
+    }
+    .bottom-search p {
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+    a.navbar-brand {
+       font-size: 32px;
+    }
+    .px-5 {
+       padding-right: 10px !important;
+       padding-left: 10px !important;
+    }
+    .layer h3 {
+       font-size: var(--fontSizeH5);
+    }
+    .layer h5 {
+       font-size: 14px;
+    }
+ }
+ 
+ @media (max-width: 425px) {
+    .layer h1 {
+       font-size: 34px;
+    }
+ }
+ 
